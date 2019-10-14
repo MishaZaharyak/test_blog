@@ -1,0 +1,18 @@
+{% extends 'ui/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="card post">
+        <img class="card-img-top" src="{% get_media_prefix %}{{ object.attachment }}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ object.title }}</h5>
+            <p class="card-text"><small class="text-muted">{{ object.created|date:"d/m/Y H:i" }}</small></p>
+            <p class="card-text">
+                {% autoescape off %}
+                    {{ object.content }}
+                {% endautoescape %}
+            </p>
+
+        </div>
+    </div>
+{% endblock %}

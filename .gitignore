@@ -1,0 +1,7 @@
+venv
+redis/data
+.vscode
+__pycache__
+.idea
+.jshintrc
+db.sqlite3

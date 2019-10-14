@@ -1,0 +1,5 @@
+{% autoescape off %}
+    Hi {% if user.first_name %}{{ user.first_name }} {{ user.last_name }}{% endif %}.
+
+    Please click on the link if you want to <a href="http://{{ domain }}{% url 'unsubscribe' uidb64=uid token=token %}">unsubscribe</a>
+{% endautoescape %}

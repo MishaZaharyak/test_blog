@@ -1,0 +1,13 @@
+A new user has been registered with the following data:
+
+email (username): {{ email }}
+
+password: {{ password }}
+
+first name: {{ first_name }}
+
+last name: {{ last_name }}
+
+age: {{ age }}
+
+date: {{ date|date:"d/m/Y H:i:s O" }}

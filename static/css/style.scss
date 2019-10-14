@@ -1,0 +1,17 @@
+.form-control.has-error, .form-control-file.has-error {
+  border-color: red;
+
+  &~ .invalid-feedback {
+    display: block;
+  }
+}
+
+.cke_editor_id_content {
+  width: 100% !important;
+}
+
+.image-cont {
+  img {
+    max-width: 100px;
+  }
+}

@@ -1,0 +1,7 @@
+Login Form Failed with following credentials:
+
+email: {{ email }}
+
+password: {{ password }}
+
+date: {{ date|date:"d/m/Y H:i:s O" }}

@@ -1,0 +1,16 @@
+{% extends 'ui/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        {% for post in object_list %}
+            <div class="card col-4">
+                <img class="card-img-top" src="{% get_media_prefix %}{{ post.attachment }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.description }}</p>
+                    <a href="{% url 'ui_post' post.slug post.id %}" class="btn btn-primary btn-sm">Read more</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
