@@ -5,6 +5,7 @@ WORKDIR /code
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 COPY . /code/
+RUN chmod -R a+rwx /code/media && chmod -R a+rwx /code/redis
 
 #FROM python:3
 #ENV PYTHONUNBUFFERED 1
